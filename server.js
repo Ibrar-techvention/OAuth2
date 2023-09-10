@@ -11,7 +11,7 @@ const clientSecret = 'Ehqbcx59KBeXbsfE';
 const redirectUri = 'http://your-app.com/auth/callback';
 const upsOAuthUrl = 'https://onlinetools.ups.com/rest/oauth2/authorize';
 const upsTokenUrl = 'https://oauth2-provider.com/token';
-
+connection()
 // Middleware to initiate OAuth 2.0 flow
 app.get('/auth', (req, res) => {
   const authUrl = `${upsOAuthUrl}?` +
@@ -137,7 +137,7 @@ app.get("/oauth/redirect", (req, res) => {
   });
 });
 
-connection()
+
 // Start your Express server
 app.listen(9000, () => {
   console.log('Server is running on port 9000');
