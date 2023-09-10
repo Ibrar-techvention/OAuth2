@@ -139,6 +139,6 @@ app.get("/oauth/redirect", (req, res) => {
 
 connection()
 // Start your Express server
-app.listen(3000, () => {
-  console.log('Server is running on port 3000');
+app.listen(9000, () => {
+  console.log('Server is running on port 9000');
 });
